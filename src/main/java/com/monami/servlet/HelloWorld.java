@@ -20,6 +20,7 @@ public class HelloWorld extends HttpServlet {
 	public void init() throws ServletException {
 	      // Do required initialization
 	      message = "Hello World";
+	      System.out.println("THis is init() method");
 	   }
 	//public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	//{
@@ -33,10 +34,12 @@ public class HelloWorld extends HttpServlet {
 	      // Actual logic goes here.
 	      PrintWriter out = response.getWriter();
 	      out.println("<h1>" + message + "</h1>");
+	      System.out.println("this is service() method");
 	   }
 
 	   public void destroy() {
 	      // do nothing.
+		   System.out.println("This is destroy() method");
 	   }
 	}
 
