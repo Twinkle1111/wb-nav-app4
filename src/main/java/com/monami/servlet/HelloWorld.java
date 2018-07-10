@@ -24,6 +24,11 @@ public class HelloWorld extends HttpServlet {
 	   }
 	//public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	//{
+			public HelloWorld()
+			{
+				super();
+				System.out.println("this is the constructor");
+			}
 
 	   public void doGet(HttpServletRequest request, HttpServletResponse response)
 	      throws ServletException, IOException {
@@ -36,10 +41,9 @@ public class HelloWorld extends HttpServlet {
 	      out.println("<h1>" + message + "</h1>");
 	      System.out.println("this is service() method");
 	   }
-
+	   //doubt
 	   public void destroy() {
 	      // do nothing.
-		   System.out.println("This is destroy() method");
 	   }
 	}
 
