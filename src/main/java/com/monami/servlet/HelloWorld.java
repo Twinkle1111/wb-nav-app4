@@ -19,7 +19,7 @@ public class HelloWorld extends HttpServlet {
      */
 	public void init() throws ServletException {
 	      // Do required initialization
-	      message = "Hello World";
+	      message = "This is the Servlet page";
 	      System.out.println("THis is init() method");
 	   }
 	//public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
